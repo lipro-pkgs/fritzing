@@ -6,3 +6,7 @@
 	path = libgit2
 	url = https://github.com/libgit2/libgit2.git
 	branch = main
+[submodule "fritzing-parts"]
+	path = fritzing-parts
+	url = https://github.com/fritzing/fritzing-parts.git
+	branch = main

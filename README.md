@@ -10,8 +10,31 @@ ready for production.
 
 # Project Structure
 
+* *fritzing-parts*: **[0.9.9-20210916](https://github.com/fritzing/fritzing-parts/commits/main)**
 * *libgit2*: **[v1.30](https://github.com/libgit2/libgit2/releases/tag/v1.3.0)**
 * *boost*: **[v1.77.0](https://www.boost.org/users/history/version_1_77_0.html)**
+
+## Fritzing Parts Library
+
+Fritzing is installed with a Parts Library. Parts are organized into *bins*
+which can be accessed from the parts palette on the right. Fritzing ships
+with several bins, for example *Core* and *Mine*.
+
+*Primary-site*: https://fritzing.org/parts
+
+*Primary-repo*: https://github.com/fritzing/fritzing-parts
+
+Fritzing will use this Git repository as its default offline parts library.
+
+**Git submodule import:**
+
+```
+git submodule add --name fritzing-parts --branch main -- \
+    https://github.com/fritzing/fritzing-parts.git fritzing-parts
+git submodule update --init --recursive --single-branch -- fritzing-parts
+git commit -sm 'New upstream module: fritzing-parts 0.9.9-20210916' \
+           -m "git-describe: $(git -C fritzing-parts describe --tags)"
+```
 
 ## Libgit2
 
