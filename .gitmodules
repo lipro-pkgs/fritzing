@@ -2,3 +2,7 @@
 	path = boost
 	url = https://github.com/boostorg/boost.git
 	branch = master
+[submodule "libgit2"]
+	path = libgit2
+	url = https://github.com/libgit2/libgit2.git
+	branch = main

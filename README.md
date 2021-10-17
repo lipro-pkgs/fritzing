@@ -10,7 +10,35 @@ ready for production.
 
 # Project Structure
 
+* *libgit2*: **[v1.30](https://github.com/libgit2/libgit2/releases/tag/v1.3.0)**
 * *boost*: **[v1.77.0](https://www.boost.org/users/history/version_1_77_0.html)**
+
+## Libgit2
+
+Libgit2 is a dependency-free, portable, pure C implementation of Git,
+with a focus on having a nice API for use within other programs.
+
+*Primary-site*: https://libgit2.org/
+
+*Primary-repo*: https://github.com/libgit2/libgit2
+
+Fritzing will use this API to have access to external parts libraries hosted
+online in an Git trepository and reachable over HTTPS. Libgit2 must be compiled
+in front, either statically as suggest in Fritzing original build description
+or as in the case of this project dynamically to avoid some unexpected link
+errors that were discussued again and again.
+
+**Git submodule import:**
+
+```
+git submodule add --name libgit2 --branch main -- \
+    https://github.com/libgit2/libgit2.git libgit2
+git submodule update --init --recursive --single-branch -- libgit2
+git -C libgit2 checkout v1.3.0
+git -C libgit2 submodule update --init --recursive --single-branch
+git add libgit2
+git commit -sm 'New upstream module: libgit2 v1.3.0'
+```
 
 ## Boost C++ Libraries
 
