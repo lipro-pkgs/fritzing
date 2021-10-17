@@ -10,3 +10,7 @@
 	path = fritzing-parts
 	url = https://github.com/fritzing/fritzing-parts.git
 	branch = main
+[submodule "fritzing-app"]
+	path = fritzing-app
+	url = https://github.com/fritzing/fritzing-app.git
+	branch = main

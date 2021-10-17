@@ -10,9 +10,28 @@ ready for production.
 
 # Project Structure
 
+* *fritzing-app*: **[0.9.9-20210922](https://github.com/fritzing/fritzing-app/commits/main)**
 * *fritzing-parts*: **[0.9.9-20210916](https://github.com/fritzing/fritzing-parts/commits/main)**
 * *libgit2*: **[v1.30](https://github.com/libgit2/libgit2/releases/tag/v1.3.0)**
 * *boost*: **[v1.77.0](https://www.boost.org/users/history/version_1_77_0.html)**
+
+## Fritzing Application
+
+The Fritzing application as described above.
+
+*Primary-site*: https://fritzing.org/
+
+*Primary-repo*: https://github.com/fritzing/fritzing-app
+
+**Git submodule import:**
+
+```
+git submodule add --name fritzing-app --branch main -- \
+    https://github.com/fritzing/fritzing-app.git fritzing-app
+git submodule update --init --recursive --single-branch -- fritzing-app
+git commit -sm 'New upstream module: fritzing-app 0.9.9-20210922' \
+           -m "git-describe: $(git -C fritzing-app describe --tags)"
+```
 
 ## Fritzing Parts Library
 
