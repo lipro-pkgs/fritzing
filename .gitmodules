@@ -2,15 +2,23 @@
 	path = boost
 	url = https://github.com/boostorg/boost.git
 	branch = master
+	shallow = true
+	fetchRecurseSubmodules = true
 [submodule "libgit2"]
 	path = libgit2
 	url = https://github.com/libgit2/libgit2.git
 	branch = main
+	shallow = true
+	fetchRecurseSubmodules = true
 [submodule "fritzing-parts"]
 	path = fritzing-parts
 	url = https://github.com/fritzing/fritzing-parts.git
 	branch = main
+	shallow = true
+	fetchRecurseSubmodules = true
 [submodule "fritzing-app"]
 	path = fritzing-app
 	url = https://github.com/fritzing/fritzing-app.git
 	branch = main
+	shallow = true
+	fetchRecurseSubmodules = true

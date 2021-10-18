@@ -194,7 +194,15 @@ pick the right version and the compiler for your platform:
 
 ## Windows 10
 
-**COMING SOON**
+All build steps are done on command line. To do this, open a Windows command
+prompt with `⊞ Win`+`R`, enter `cmd` and press *enter*. Then change to the
+directory where this README life, the tob folder of this project.
+
+### Bootstrap Boost C++ Header
+
+```
+windows\bootstrap_boost.bat
+```
 
 # References
 
