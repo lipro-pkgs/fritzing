@@ -10,6 +10,7 @@
 	branch = main
 	shallow = true
 	fetchRecurseSubmodules = true
+	ignore = untracked
 [submodule "fritzing-parts"]
 	path = fritzing-parts
 	url = https://github.com/fritzing/fritzing-parts.git
