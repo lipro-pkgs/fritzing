@@ -204,18 +204,20 @@ directory where this README life, the tob folder of this project.
 windows\bootstrap_boost.bat
 ```
 
-### Build Libgit2
+### Build Libgit2 and Fritzing
 
 **32 bit (x86)**:
 
 ```
 windows\build_libgit2_x86.bat
+windows\build_fritzing_x86.bat 0.9.9+LPN2021Q4-1
 ```
 
 **64 bit (x86-64)**:
 
 ```
 windows\build_libgit2_x86-64.bat
+windows\build_fritzing_x86-64.bat 0.9.9+LPN2021Q4-1
 ```
 
 # References
