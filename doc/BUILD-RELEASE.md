@@ -24,6 +24,13 @@ All build steps are done on command line.
 ./linux/bootstrap_boost.sh
 ```
 
+### Build Libgit2 and Fritzing
+
+Only **64 bit (x86-64)** builds will be supported:
+
+```
+./linux/build_libgit2.sh
+```
 
 ---
 
