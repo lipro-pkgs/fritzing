@@ -16,7 +16,14 @@ cd fritzing-overall
 
 ## Linux
 
-**COMING SOON**
+All build steps are done on command line.
+
+### Bootstrap Boost C++ Header
+
+```
+./linux/bootstrap_boost.sh
+```
+
 
 ---
 
