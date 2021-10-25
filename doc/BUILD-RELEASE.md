@@ -30,6 +30,7 @@ Only **64 bit (x86-64)** builds will be supported:
 
 ```
 ./linux/build_libgit2.sh
+./linux/build_fritzing.sh 0.9.9+LPN2021Q4-1
 ```
 
 ---

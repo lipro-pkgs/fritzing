@@ -1,6 +1,9 @@
 # build and deploy artefacts
 debug*/
 release*/
+/linuxdeployqt
+/Fritzing
+*.AppImage
 
 # Created by https://www.toptal.com/developers/gitignore/api/archive,compressedarchive,vim,ninja,cmake,qtcreator,qt,qml,xcode,visualstudio
 # Edit at https://www.toptal.com/developers/gitignore?templates=archive,compressedarchive,vim,ninja,cmake,qtcreator,qt,qml,xcode,visualstudio
